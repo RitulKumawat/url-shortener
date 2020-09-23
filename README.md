@@ -2,9 +2,9 @@
 
 How it will work,
 
-npm install        --- For installing dependicies
+npm install        --- To install dependicies
 
-npm run start      --- For start server
+npm run start      --- To start server
 
 Download MongoDB from official website
 
