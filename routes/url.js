@@ -25,7 +25,7 @@ router.get('/:url', (req, res) => {
                     }
                 }
 
-                res.render('home', {msg : 'website is not registered with it'})
+                res.render('home', {msg : 'No short url is register'})
             })
     }
 })
@@ -42,8 +42,8 @@ router.post('/add', urlencodedParser, (req, res) => {
 
     newUrl
         .save()
-        .then(() => res.render('home', {msg : 'Added'}))
-        .catch((err) => res.render('home', {msg : 'Not Added'}))
+        .then(() => res.render('home', {msg : 'Short url registered successfully'}))
+        .catch((err) => res.render('home', {msg : 'A short url is already registered with it'}))
     
 })
 
